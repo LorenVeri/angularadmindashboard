@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,20 +41,10 @@ import { PagesError403Component } from './pages/pages-error403/pages-error403.co
 import { SystemsComponent } from './pages/systems/systems.component';
 import { ContentsComponent } from './pages/contents/contents.component';
 import { StatisticsComponent } from './pages/statistics/statistics.component';
-import { FunctionsComponent } from './pages/systems/functions/functions.component';
-import { UsersComponent } from './pages/systems/users/users.component';
-import { RoleComponent } from './pages/systems/role/role.component';
-import { PermissionsComponent } from './pages/systems/permissions/permissions.component';
-import { CategoriesComponent } from './pages/contents/categories/categories.component';
-import { KnowledgeBasesComponent } from './pages/contents/knowledge-bases/knowledge-bases.component';
-import { CommentComponent } from './pages/contents/comment/comment.component';
-import { ReportsComponent } from './pages/contents/reports/reports.component';
-import { MonthlyNewMembersComponent } from './pages/statistics/monthly-new-members/monthly-new-members.component';
-import { MonthlyNewKbsComponent } from './pages/statistics/monthly-new-kbs/monthly-new-kbs.component';
-import { MonthlyNewCommentsComponent } from './pages/statistics/monthly-new-comments/monthly-new-comments.component';
 import { SystemRoutingModule } from './pages/systems/systems-routing.module';
 import { ContentsRoutingModule } from './pages/contents/contents-routing.module';
 import { StatisticRoutingModule } from './pages/statistics/statistics-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -99,17 +88,6 @@ import { StatisticRoutingModule } from './pages/statistics/statistics-routing.mo
     SystemsComponent,
     ContentsComponent,
     StatisticsComponent,
-    FunctionsComponent,
-    UsersComponent,
-    RoleComponent,
-    PermissionsComponent,
-    CategoriesComponent,
-    KnowledgeBasesComponent,
-    CommentComponent,
-    ReportsComponent,
-    MonthlyNewMembersComponent,
-    MonthlyNewKbsComponent,
-    MonthlyNewCommentsComponent
   ],
   imports: [
     BrowserModule,

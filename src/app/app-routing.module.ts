@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AlertsComponent } from './components/alerts/alerts.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
@@ -33,6 +32,7 @@ import { PagesLoginComponent } from './pages/pages-login/pages-login.component';
 import { PagesRegisterComponent } from './pages/pages-register/pages-register.component';
 import { UsersProfileComponent } from './pages/users-profile/users-profile.component';
 import { PagesError403Component } from './pages/pages-error403/pages-error403.component';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -69,6 +69,9 @@ const routes: Routes = [
   { path: 'pages-login', component: PagesLoginComponent },
   { path: 'pages-register', component: PagesRegisterComponent },
   { path: 'user-profile', component: UsersProfileComponent },
+  { path: 'systems', loadChildren: () => import('./pages/systems/systems.module').then(m => m.SystemsModule) },
+  // { path: 'contents', loadChildren: () => import('./pages/contents/contents.module').then(m => m.ContentsModule) },
+  { path: 'statistics', loadChildren: () => import('./pages/statistics/statistics.module').then(m => m.StatisticsModule) }
 ];
 
 @NgModule({
